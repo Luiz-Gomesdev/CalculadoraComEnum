@@ -1,0 +1,46 @@
+package br.com.luiz.calculadora.enums;
+
+public enum Operacoes {
+	
+	SOMAR("+") {
+		@Override
+		public double executarOperacao(double x, double y) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+	},
+	SUBTRAIR("-") {
+		@Override
+		public double executarOperacao(double x, double y) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+	},
+	MULTIPLICAR("*") {
+		@Override
+		public double executarOperacao(double x, double y) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+	},
+	DIVIDIR("/") {
+		@Override
+		public double executarOperacao(double x, double y) {
+			// TODO Auto-generated method stub
+			return 0;
+		}
+	};
+	
+	private String simbolo;
+	
+	Operacoes(String simbolo){
+		this.simbolo = simbolo;
+	}
+	
+	public abstract double executarOperacao(double x, double y);
+	
+	public String toString() {
+		return this.simbolo;
+	}
+
+}

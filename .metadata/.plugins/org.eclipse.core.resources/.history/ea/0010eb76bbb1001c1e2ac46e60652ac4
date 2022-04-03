@@ -1,0 +1,22 @@
+package br.com.luiz.calculadora.enums;
+
+public enum Operacoes {
+	
+	SOMAR("+"),
+	SUBTRAIR("-"),
+	MULTIPLICAR("*"),
+	DIVIDIR("/");
+	
+	private String simbolo;
+	
+	Operacoes(String simbolo){
+		this.simbolo = simbolo;
+	}
+	
+	public abstract double executarOperacao(double x, double y);
+	
+	public String toString() {
+		return this.simbolo;
+	}
+
+}

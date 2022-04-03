@@ -1,0 +1,10 @@
+package br.com.luiz.calculadora.application;
+
+public class Calculadora {
+	
+	public static double calculaOperacao(double x, double y) {
+		 
+		for (Operacao op : Operaca)
+	}
+
+}

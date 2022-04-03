@@ -1,0 +1,23 @@
+package br.com.luiz.calculadora.application;
+
+import br.com.luiz.calculadora.enums.Operacoes;
+
+public class Calculadora {
+	
+	public static double calculaOperacao() {
+		 
+		for (Operacoes op : Operacoes.values()) {
+			
+			double x = 0;
+			double y = 0;
+			System.out.print(x + " ");
+			System.out.print(op.toString()+ " ");
+			System.out.print(y + " = ");
+			System.out.print(op.executarOperacao(x, y));
+			
+			
+		}
+		return 0;
+	}
+
+}
